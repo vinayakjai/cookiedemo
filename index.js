@@ -34,7 +34,7 @@ app.post('/cookie',(req,res)=>{
     let {tokenValue}=req.body;
 
     return res.cookie("token",tokenValue,{
-        httpOnly:true,
+
     }).json({
         message:"cookie initialised",
     })
