@@ -8,6 +8,7 @@ const app=express();
 app.use(cors({
     origin:"https://democookie.netlify.app",
     credentials:true,
+    exposedHeaders: ["Set-Cookie"]
 }))
 
 app.use(cookieParser());
